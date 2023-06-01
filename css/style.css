@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Futter Book';
-    src: url("../assets/FutterGrotesk-Book.ttf") format('ttf');
+    src: url("../assets/FutterGrotesk-Book.woff") format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futter Medium';
-    src: url("../assets/FutterGrotesk-Medium.ttf") format('ttf');
+    src: url("../assets/FutterGrotesk-Medium.woff") format('woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -146,7 +146,6 @@ span {
     color: #A0A0A0;
 }
 
-
 /*--------------------------------------------------------------
 # Overlay
 --------------------------------------------------------------*/
@@ -171,20 +170,18 @@ span {
     display: flex;
 }
 
-.overlay a:nth-child(1){
-    margin-right: 30px; 
+.overlay a:nth-child(1) {
+    margin-right: 30px;
 }
 
 .overlay a img {
-  width: 25vw;
-  max-width: 80%;
+    width: 25vw;
+    max-width: 80%;
 }
-
 
 .toggle-close {
     right: 30px;
 }
-
 
 /*--------------------------------------------------------------
 # Side Cols
@@ -221,9 +218,10 @@ header {
 }
 
 .aside-left h3 {
+    font-family: 'Futter Medium';
     font-size: calc(11px + (23 - 11) * ((100vw - 320px) / (1300 - 320)));
     line-height: calc(11px + (23 - 11) * ((100vw - 320px) / (1300 - 320)));
-    letter-spacing: 2.5px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     writing-mode: vertical-lr;
     color: #000;
@@ -236,7 +234,7 @@ header {
     line-height: calc(9 + (25 - 9) * ((100vw - 320px) / (1300 - 320)));
     font-family: sans-serif;
     font-weight: 500;
-    letter-spacing: 2.5px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     writing-mode: horizontal-tb;
     color: #000;
@@ -382,7 +380,7 @@ section {
     padding-bottom: calc(1.2* var(--p-large));
 }
 
-div.cursor {
+.cursor {
     cursor: none !important;
     pointer-events: none;
     position: absolute;
@@ -571,7 +569,7 @@ video {
     -webkit-box-shadow: 0 -5px 31px 46px rgba(192, 181, 255, 1);
     -ms-box-shadow: 0 -5px 31px 46px rgba(192, 181, 255, 1);
     box-shadow: 0 -5px 31px 46px rgba(192, 181, 255, 1);
-   
+
 }
 
 /*--------------------------------------------------------------
@@ -580,19 +578,52 @@ video {
 
 @media only screen and (min-width: 260px) and (max-width: 767px) {
 
-    .aside-right {
-        width: 17px;
-        padding-right: 2px;
+    :root {
+        --blur: blur(6px);
+        --blurfine: blur(1.5px);
+        --width: calc(100vw - 60px);
     }
 
-    .aside-right h3 {
-        font-size: 12px;
-
+    main {
+        width: calc(100vw - 80px);
     }
+
+    .fs-h4 {
+        letter-spacing: 0.5px;
+        font-family: "Futter Medium";
+    }
+
+    .fs-h3, .fs-p-large  {
+        font-size: 26px;
+        line-height: 29px;
+    }
+
+
+    .fs-p-medium {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
 
     .aside-left {
         width: 17px;
-        padding-left: 2px;
+        padding-left: 3px;
+    }
+
+    .aside-right {
+        width: 17px;
+        padding-right: 0;
+    }
+
+    .aside-right h3 {
+        font-size: 10px;
+        letter-spacing: -0.1px;
+
+    }
+    .app img {
+        max-width: 70vw;
+        height: auto;
+        max-height: 70vh;
     }
 
     .images {
@@ -620,6 +651,10 @@ video {
         /* float: left; */
     }
 
+    section {
+        padding: 0 0 calc(3*var(--p-large));
+    }
+
     .description,
     .glance-content {
         flex-direction: column;
@@ -639,7 +674,7 @@ video {
     }
 
     .glance {
-        padding: 0 50px var(--p-small);
+        padding: 0 0 var(--p-small);
 
     }
 
@@ -681,6 +716,10 @@ video {
         border-top: 1px solid black;
         padding: 2.5%;
 
+    }
+
+    .cursor {
+        display: none;
     }
 
     div.film-index {
