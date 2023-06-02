@@ -16,9 +16,7 @@
     --blur: blur(12px);
     --blurfine: blur(4px);
     --width: calc(100vw - 80px);
-    --p-small: 15px;
-    --p-large: 80px;
-    --p-xlarge: 18vh;
+    --col-width: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -151,11 +149,11 @@ span {
 --------------------------------------------------------------*/
 
 .overlay {
-    width: calc(100vw - 60px);
-    height: 100vh;
-    position: absolute;
+    width: calc(100vw - calc(2* var(--col-width)));
+    height: 100lvh;
+    position: fixed;
     top: 0;
-    left: 30px;
+    left: var(--col-width);
     z-index: 999;
     background-color: #00000099;
     transition: display 0.4s;
@@ -195,8 +193,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 30px;
-    height: 100vh;
+    width: var(--col-width);
+    height: 100lvh;
     padding-left: 4px;
     overflow: hidden;
     white-space: nowrap;
@@ -208,8 +206,8 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    width: 30px;
-    height: 100vh;
+    width: var(--col-width);
+    height: 100lvh;
     padding-right: 4px;
     overflow: hidden;
     white-space: nowrap;
@@ -582,6 +580,7 @@ video {
         --blur: blur(6px);
         --blurfine: blur(1.5px);
         --width: calc(100vw - 60px);
+       --col-width: 17px;
     }
 
     main {
@@ -606,12 +605,12 @@ video {
 
 
     .aside-left {
-        width: 17px;
+        width: var(--col-width);
         padding-left: 3px;
     }
 
     .aside-right {
-        width: 17px;
+        width: var(--col-width);
         padding-right: 0;
     }
 
@@ -723,11 +722,12 @@ video {
     }
 
     div.film-index {
-        width: 100%;
+        width: 70%;
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: 1fr;
         grid-gap: 35px 14px;
+        margin: 0 auto;
     }
 
     .contributers-container {
