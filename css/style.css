@@ -12,11 +12,28 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Noto Regular';
+    src: url("../assets/NotoSansJP-Regular.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Medium';
+    src: url("../assets/NotoSansJP-Medium.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
 :root {
     --blur: blur(12px);
     --blurfine: blur(4px);
     --width: calc(100vw - 80px);
     --col-width: 30px;
+    --p-small: 40px;
+    --p-large: 80px;
+    --p-xlarge: 160px;
 }
 
 /*--------------------------------------------------------------
@@ -228,6 +245,7 @@ header {
 }
 
 .aside-right h3 {
+    font-family: 'Noto Medium' !important;
     font-size: calc(9 + (25 - 9) * ((100vw - 320px) / (1300 - 320)));
     line-height: calc(9 + (25 - 9) * ((100vw - 320px) / (1300 - 320)));
     font-family: sans-serif;
@@ -403,11 +421,12 @@ section {
 }
 
 div.film-index {
-    width: 100%;
+    width: calc(100% - 5%);
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
-    grid-gap: 35px 14px;
+    grid-gap: 80px 80px;
 }
 
 div.video-titel-container {
@@ -422,7 +441,7 @@ div.video-titel-container {
     padding-top: calc(432.98 / 201.93 * 100%);
     width: 100%;
     cursor: none !important;
-    background-color: black;
+
 }
 
 .mask {
@@ -575,12 +594,11 @@ video {
 --------------------------------------------------------------*/
 
 @media only screen and (min-width: 260px) and (max-width: 767px) {
-
     :root {
         --blur: blur(6px);
         --blurfine: blur(1.5px);
         --width: calc(100vw - 60px);
-       --col-width: 17px;
+        --col-width: 17px;
     }
 
     main {
@@ -592,17 +610,16 @@ video {
         font-family: "Futter Medium";
     }
 
-    .fs-h3, .fs-p-large  {
+    .fs-h3,
+    .fs-p-large {
         font-size: 26px;
         line-height: 29px;
     }
-
 
     .fs-p-medium {
         font-size: 17px;
         line-height: 20px;
     }
-
 
     .aside-left {
         width: var(--col-width);
