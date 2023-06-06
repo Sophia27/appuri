@@ -58,8 +58,8 @@ body {
 .button {
     background-color: black;
     color: white;
-    font-size: calc(23px + (32 - 23) * ((100vw - 320px) / (1300 - 320)));
-    line-height: calc(23px + (32 - 22) * ((100vw - 320px) / (1300 - 320)));
+    font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1300 - 320)));
+    line-height: calc(18px + (32 - 18) * ((100vw - 320px) / (1300 - 320)));
     letter-spacing: 1px;
     color: #fff;
     border: none;
@@ -92,11 +92,18 @@ a:hover {
     /* padding-bottom: calc(var(--p-small)*4); */
 }
 
+.fs-h1-noto {
+    font-family: 'Noto Regular', sans-serif;
+    font-size: calc(45px + (116 - 45) * ((100vw - 320px) / (1300 - 320)));
+    line-height: calc(48px + (125 - 48) * ((100vw - 320px) / (1300 - 320)));
+    /* padding-bottom: calc(var(--p-small)*4); */
+}
+
 .fs-h2 {
     font-size: calc(23px + (64 - 23) * ((100vw - 320px) / (1300 - 320)));
     line-height: calc(22px + (62 - 22) * ((100vw - 320px) / (1300 - 320)));
     color: #fff;
-    text-shadow: 2px 2px 15px rgba(180, 180, 180, 0.4);
+    text-shadow: 2px 2px 20px rgba(100, 100, 100, 0.6);
 }
 
 .fs-h3 {
@@ -234,8 +241,8 @@ header {
 
 .aside-left h3 {
     font-family: 'Futter Medium';
-    font-size: calc(11px + (23 - 11) * ((100vw - 320px) / (1300 - 320)));
-    line-height: calc(11px + (23 - 11) * ((100vw - 320px) / (1300 - 320)));
+    font-size: calc(11px + (21 - 11) * ((100vw - 320px) / (1300 - 320)));
+    line-height: calc(11px + (21 - 11) * ((100vw - 320px) / (1300 - 320)));
     letter-spacing: 0.5px;
     text-transform: uppercase;
     writing-mode: vertical-lr;
@@ -560,7 +567,7 @@ video {
 
 .contributer-name {
     position: absolute;
-    transform: translate(-50%,-52%);
+    transform: translate(-50%,-68%);
     top: 50%;
     left: 50%;
     color: white;
@@ -597,7 +604,7 @@ video {
     :root {
         --blur: blur(6px);
         --blurfine: blur(1.5px);
-        --width: calc(100vw - 60px);
+        --width: calc(100vw - 40px);
         --col-width: 17px;
     }
 
@@ -633,9 +640,19 @@ video {
 
     .aside-right h3 {
         font-size: 10px;
-        letter-spacing: -0.1px;
-
+        letter-spacing: 0.5px;
     }
+
+    .aside-left h3 {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+
+    .app {
+        left: 20px;
+    }
+
     .app img {
         max-width: 70vw;
         height: auto;
