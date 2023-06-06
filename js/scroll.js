@@ -4,16 +4,6 @@ const images = document.querySelector('.images')
 const imagesHeight = document.querySelector('.images').clientHeight;
 const bodyTag = document.querySelector('.inhalt')
 
-//When we scroll we want to change the filter
-// document.addEventListener('scroll', function () {
-//   const pixels = window.pageYOffset
-//   const sectionHeight = imagesHeight * 3 
-//   const percentage = pixels / sectionHeight
-//   //app.style.height = `calc(100% - ${100 * percentage}%)`
-//   //app.style.filter = `blur(${100 * percentage}%)`
-
-
-// })
 
 document.addEventListener('scroll', function () {
   const scroll = window.pageYOffset
