@@ -7,7 +7,7 @@ const bodyTag = document.querySelector('.inhalt')
 
 document.addEventListener('scroll', function () {
   const scroll = window.pageYOffset
-  const height = imagesHeight
+  // const height = imagesHeight
   
   if (scroll > 800) {
     app.classList.add("nofilter");
@@ -31,4 +31,14 @@ app.addEventListener('mouseover', function() {
   }
 })
 
+
+app.addEventListener('ontouchmove', function() {
+  if (app.classList.contains('nofilter')) {
+    app.classList.remove("nofilter");
+    images.classList.remove("filter");
+  } else {
+    app.classList.add("nofilter");
+    images.classList.add("filter");
+  }
+})
 
