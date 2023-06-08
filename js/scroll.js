@@ -42,3 +42,13 @@ app.addEventListener('ontouchmove', function() {
   }
 })
 
+images.addEventListener('ontouchmove', function() {
+  if (app.classList.contains('nofilter')) {
+    app.classList.add("nofilter");
+    images.classList.add("filter");
+  } else {
+    app.classList.remove("nofilter");
+    images.classList.remove("filter");
+  }
+})
+
