@@ -32,6 +32,17 @@ app.addEventListener('mouseover', function() {
 })
 
 
+images.addEventListener('mouseover', function() {
+  if (app.classList.contains('nofilter')) {
+    app.classList.add("nofilter");
+    images.classList.add("filter");
+  } else {
+    app.classList.remove("nofilter");
+    images.classList.remove("filter");
+  }
+})
+
+
 app.addEventListener('ontouchmove', function() {
   if (app.classList.contains('nofilter')) {
     app.classList.remove("nofilter");
