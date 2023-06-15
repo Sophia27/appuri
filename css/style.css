@@ -409,10 +409,11 @@ section {
     max-width: 80svw;
     margin: 0 auto;
     display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   gap: 30px 100px; /* row-gap column gap */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px 100px;
+    /* row-gap column gap */
 }
 
 div.video-titel-container {
@@ -440,7 +441,7 @@ div.video-titel-container {
 }
 
 .nobg {
-    background:rgba(200, 200, 200, 0);
+    background: rgba(200, 200, 200, 0);
 }
 
 .video-container video {
@@ -576,18 +577,15 @@ video {
     font-size: calc(23px + (32 - 23) * ((100vw - 320px) / (1300 - 320)));
     line-height: 1;
     letter-spacing: 1px;
-    padding: 0px 10px 10px 10px;
+    padding: 0 10px 10px;
     text-transform: uppercase;
     border-radius: 20px;
     /* width: 400px;
     height: 260px; */
     -moz-box-shadow: 0 0 30px 30px rgba(192, 181, 255, 1);
-    -webkit-box-shadow:  0 0 30px 30px rgba(192, 181, 255, 1);
-    -ms-box-shadow:  0 0 30px 30px rgba(192, 181, 255, 1);
-    box-shadow:  0 0 30px 30px rgba(192, 181, 255, 1);
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
+    -webkit-box-shadow: 0 0 30px 30px rgba(192, 181, 255, 1);
+    -ms-box-shadow: 0 0 30px 30px rgba(192, 181, 255, 1);
+    box-shadow: 0 0 30px 30px rgba(192, 181, 255, 1);
     margin: 0 auto;
     transform: translate(-50%,-52%);
 }
