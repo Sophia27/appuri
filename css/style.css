@@ -29,6 +29,7 @@
 :root {
     --blur: blur(12px);
     --blurfine: blur(4px);
+    --blursmalltext: blur(1px);
     --width: calc(100vw - 80px);
     --col-width: 30px;
     --p-small: 40px;
@@ -141,6 +142,13 @@ a:hover {
 .blur {
     filter: var(--blurfine);
     -webkit-filter: var(--blurfine);
+    transition: filter 0.8s;
+}
+
+
+.blurfine {
+    filter: var(--blursmalltext);
+    -webkit-filter: var(--blursmalltext);
     transition: filter 0.8s;
 }
 
@@ -410,7 +418,7 @@ section {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 30px 100px;
     /* row-gap column gap */
@@ -418,6 +426,7 @@ section {
 
 div.video-titel-container {
     position: relative;
+    width: 33vw;
 }
 
 .video-container {
