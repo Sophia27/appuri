@@ -707,7 +707,7 @@ div.video-titel-container {
     }
 
     section {
-        padding: 0 0 calc(3*var(--p-large));
+        padding: 0 0 var(--p-large);
     }
 
     .description,
@@ -735,7 +735,7 @@ div.video-titel-container {
 
     .glance-content {
         margin-top: 80vh;
-        padding: 0;
+        padding: 0 0 var(--p-large) 0;
     }
 
     .glance-grid {
@@ -770,8 +770,8 @@ div.video-titel-container {
     .right-box-3 {
         grid-area: 4 / 1 / 5 / 1;
         border-top: 1px solid black;
+        border-right: none;
         padding: 2.5%;
-
     }
 
     .cursor {
