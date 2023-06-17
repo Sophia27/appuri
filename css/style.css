@@ -425,15 +425,20 @@ section {
 
 div.video-titel-container {
     position: relative;
-    width: 33.3%
+    width: 32%;
+    display: flex;
+    flex-direction: column;
 }
 
 .video-container {
     position: relative;
     overflow: hidden;
     /* padding-top: 180%; */
-    padding-top: calc( 654.9 / 370.13 * 100%);
+    /* padding-top: calc( 654.9 / 370.13 * 100%); */
     width: 100%;
+    min-height: 53.75vh;
+    height: 100vh;
+    max-height: 74vh;
 }
 
 .mask {
@@ -731,6 +736,7 @@ div.video-titel-container {
 
     .glance-content {
         margin-top: 80vh;
+        padding: 0;
     }
 
     .glance-grid {
@@ -774,13 +780,15 @@ div.video-titel-container {
     }
 
     div.film-index {
-        width: 70%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: 1fr;
-        grid-gap: 35px 14px;
+        width: 100%;
+        flex-direction: column;
         margin: 0 auto;
     }
+
+    div.video-titel-container {
+    width: 80%;
+    margin: 0 auto var(--p-large) auto;
+}
 
     .contributers-container {
         flex-direction: column;
