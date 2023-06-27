@@ -70,7 +70,7 @@ body {
     padding: 6px 18px 5px 21px;
     z-index: 999;
     text-transform: uppercase;
-    border-radius: 20px;
+    border-radius: 100px;
     width: auto;
     cursor: pointer;
 }
@@ -110,13 +110,17 @@ a:hover {
 .fs-h3 {
     font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1300 - 320)));
     line-height: calc(22px + (41 - 22) * ((100vw - 320px) / (1300 - 320)));
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .fs-h4 {
-    font-size: calc(11px + (19 - 11) * ((100vw - 320px) / (1300 - 320)));
-    line-height: calc(12px + (21 - 12) * ((100vw - 320px) / (1300 - 320)));
+    font-family: 'Futter Medium';
+    font-size: calc(11px + (15 - 11) * ((100vw - 320px) / (1300 - 320)));
+    line-height: calc(12px + (16 - 12) * ((100vw - 320px) / (1300 - 320)));
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.6px;
+    padding-bottom: calc(var(--p-small)/10);
 }
 
 .fs-p-large {
