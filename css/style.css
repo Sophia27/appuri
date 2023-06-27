@@ -190,9 +190,9 @@ span {
     top: 0;
     left: var(--col-width);
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
     transition: display 0.4s;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(18px);
     display: none;
     align-items: center;
     justify-content: center;
@@ -213,7 +213,21 @@ span {
 }
 
 .toggle-close {
+    color: white;
+    font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1300 - 320)));
+    line-height: calc(18px + (32 - 18) * ((100vw - 320px) / (1300 - 320)));
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
+    position: fixed;
+    top: 20px;
     right: 30px;
+    padding: 6px 18px 5px 21px;
+    z-index: 999;
+    text-transform: uppercase;
+    border-radius: 100px;
+    width: auto;
+    cursor: pointer;
 }
 
 /*--------------------------------------------------------------
@@ -645,7 +659,7 @@ div.video-titel-container {
     .desktop {
         display: none !important;
     }
-    
+
 .aside-left .mobile {
     position: fixed;
     top: 0;

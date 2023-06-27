@@ -32,6 +32,15 @@ videoContainers.forEach(container => {
     }
   })
 
+    video.addEventListener("ended", function(){
+      video.currentTime = 0;
+      video.pause()
+      btn.innerHTML = 'Play'
+      btn.style.display = 'flex'
+      mask.classList.remove('nobg')
+    });
+
+
 
   btn.addEventListener('click', function() {
     if (video.paused == false) {
