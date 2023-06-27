@@ -230,9 +230,6 @@ header {
     left: 0;
     width: var(--col-width);
     height: 100lvh;
-    padding-left: 4px;
-    overflow: hidden;
-    white-space: nowrap;
     background-color: white;
     z-index: 999;
 }
@@ -243,38 +240,30 @@ header {
     right: 0;
     width: var(--col-width);
     height: 100lvh;
-    padding-right: 4px;
-    overflow: hidden;
-    white-space: nowrap;
     background-color: white;
     z-index: 999;
 }
 
-.aside-left h3 {
-    font-family: 'Futter Medium';
-    font-size: calc(11px + (21 - 11) * ((100vw - 320px) / (1300 - 320)));
-    line-height: calc(11px + (21 - 11) * ((100vw - 320px) / (1300 - 320)));
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    writing-mode: vertical-lr;
-    color: #000;
-    text-overflow: clip;
-    transform: rotate(180deg);
+.aside-left .desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
 }
 
-.aside-right h3 {
-    font-family: 'Noto Medium' !important;
-    font-size: calc(9 + (25 - 9) * ((100vw - 320px) / (1300 - 320)));
-    line-height: calc(9 + (25 - 9) * ((100vw - 320px) / (1300 - 320)));
-    font-family: sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    writing-mode: horizontal-tb;
-    color: #000;
-    text-overflow: clip;
-    transform: rotate(90deg);
+.aside-right .desktop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
 }
+
+.mobile {
+    display: none;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Section INTRO
@@ -645,23 +634,31 @@ div.video-titel-container {
 
     .aside-left {
         width: var(--col-width);
-        padding-left: 3px;
+      
     }
 
     .aside-right {
         width: var(--col-width);
-        padding-right: 0;
+
     }
 
-    .aside-right h3 {
-        font-size: 10px;
-        letter-spacing: 0.5px;
+    .desktop {
+        display: none !important;
     }
+    
+.aside-left .mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+}
 
-    .aside-left h3 {
-        font-size: 12px;
-        letter-spacing: 0.5px;
-    }
+.aside-right .mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+}
 
     .overlay-links {
         display: flex;
