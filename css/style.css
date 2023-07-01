@@ -303,9 +303,10 @@ footer {
     padding: 0 var(--p-small);
 }
 
+
 .app {
     position: fixed;
-    top: 0;
+    top: 70vh;
     left: 40px;
     width: var(--width);
     margin: 0 auto;
@@ -314,7 +315,12 @@ footer {
     align-items: center;
     justify-content: center;
     z-index: 3;
+    transition: top 0.6s;
+}
 
+.app.scrolled {
+    top: 0vh;
+    transition: top 0.6s;
 }
 
 .app img {
@@ -439,10 +445,11 @@ div.video-titel-container {
     min-height: 53.75vh;
     height: 100vh;
     max-height: 74vh;
+    background-color: rgba(0, 0, 0, 0.04);
 }
 
 .mask {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.75);
     position: absolute;
     top: 0;
     left: 0;
@@ -473,6 +480,7 @@ div.video-titel-container {
     object-fit: contain;
     overflow-clip-margin: content-box;
     overflow: clip;
+    mix-blend-mode: multiply;
 }
 
 .btn {
@@ -481,21 +489,11 @@ div.video-titel-container {
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1/1;
     transform: translate(-50%,-52%);
     z-index: 9999999;
-    background-color: #000000;
     color: #ffffff;
     text-transform: uppercase;
-    border-radius: 50%;
     letter-spacing: 1px;
-    -moz-box-shadow: 0 0 30px 35px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 0 0 30px 35px rgba(0, 0, 0, 1);
-    -ms-box-shadow: 0 0 30px 35px rgba(0, 0, 0, 1);
-    box-shadow: 0 0 30px 35px rgba(0, 0, 0, 1);
 }
 
 .glance-content {
@@ -561,10 +559,15 @@ div.video-titel-container {
 }
 
 .contributer-img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
     aspect-ratio: 1/1;
-    background: greenyellow;
+    background: #E6E6E6;
+    -moz-box-shadow: 0 0 30px 30px rgba(230, 230, 230, 1);
+    -webkit-box-shadow: 0 0 30px 30px rgba(230, 230, 230, 1);
+    -ms-box-shadow: 0 0 30px 30px rgba(230, 230, 230, 1);
+    box-shadow: 0 0 30px 30px rgba(230, 230, 230, 1);
     border-radius: 50%;
     overflow: hidden;
 }
@@ -585,25 +588,6 @@ div.video-titel-container {
 .contributer-name:hover {
     filter: none;
     -webkit-filter: none;
-}
-
-.support-button {
-    background-color: #C0B5FF;
-    color: white;
-    font-size: calc(23px + (32 - 23) * ((100vw - 320px) / (1300 - 320)));
-    line-height: 1;
-    letter-spacing: 1px;
-    padding: 0 10px 10px;
-    text-transform: uppercase;
-    border-radius: 20px;
-    /* width: 400px;
-    height: 260px; */
-    -moz-box-shadow: 0 0 30px 30px rgba(192, 181, 255, 1);
-    -webkit-box-shadow: 0 0 30px 30px rgba(192, 181, 255, 1);
-    -ms-box-shadow: 0 0 30px 30px rgba(192, 181, 255, 1);
-    box-shadow: 0 0 30px 30px rgba(192, 181, 255, 1);
-    margin: 0 auto;
-    transform: translate(-50%,-52%);
 }
 
 /*--------------------------------------------------------------

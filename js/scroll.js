@@ -5,6 +5,20 @@ const imagesHeight = document.querySelector('.images').clientHeight;
 const bodyTag = document.querySelector('.inhalt')
 
 
+// document.addEventListener('scroll', function () {
+//   const scroll = window.pageYOffset
+  
+//   if (scroll > 100) {
+//     app.classList.add("scrolled");
+    
+//   } else {
+//    // app.style.filter = `blur(${percentage}%)`
+//    app.classList.remove("scrolled");
+  
+//   }
+// })
+
+
 document.addEventListener('scroll', function () {
   const scroll = window.pageYOffset
   // const height = imagesHeight
