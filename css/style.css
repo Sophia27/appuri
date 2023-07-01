@@ -28,7 +28,7 @@
 
 :root {
     --blur: blur(12px);
-    --blurfine: blur(4px);
+    --blurfine: blur(2.5px);
     --blursmalltext: blur(1px);
     --width: calc(100vw - 80px);
     --col-width: 30px;
@@ -57,22 +57,15 @@ body {
 }
 
 .button {
-    background-color: black;
-    color: white;
-    font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1300 - 320)));
-    line-height: calc(18px + (32 - 18) * ((100vw - 320px) / (1300 - 320)));
-    letter-spacing: 1px;
-    color: #fff;
-    border: none;
     position: fixed;
     top: 20px;
     right: 50px;
-    padding: 6px 18px 5px 21px;
     z-index: 999;
-    text-transform: uppercase;
-    border-radius: 100px;
-    width: auto;
     cursor: pointer;
+}
+
+.button:hover {
+    filter: none;
 }
 
 a {
@@ -190,9 +183,10 @@ span {
     top: 0;
     left: var(--col-width);
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     transition: display 0.4s;
     backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
     display: none;
     align-items: center;
     justify-content: center;
