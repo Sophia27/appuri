@@ -315,12 +315,12 @@ footer {
     align-items: center;
     justify-content: center;
     z-index: 3;
-    transition: top 0.6s;
+    transition: top 0.8s;
 }
 
-.app.scrolled {
+ .app.scrolled {
     top: 0vh;
-    transition: top 0.6s;
+    transition: top 0.8s;
 }
 
 .app img {
@@ -604,10 +604,7 @@ footer .links div:hover {
     filter:none;
 }
 
-.sender-subs-popup-form .sender-subs-popup-form-bYwDWe
-.sender-form-modal-background .sender-form-input-bYwDWe {
-    background-color: red !important;
-}
+
 
 /*--------------------------------------------------------------
 # RESPONSIVE

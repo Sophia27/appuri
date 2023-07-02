@@ -1,29 +1,21 @@
 const app = document.querySelector('.app img')
+const appuri = document.querySelector('.app')
 const intro = document.querySelector('.intro')
 const images = document.querySelector('.images')
 const imagesHeight = document.querySelector('.images').clientHeight;
 const bodyTag = document.querySelector('.inhalt')
 
 
-// document.addEventListener('scroll', function () {
-//   const scroll = window.pageYOffset
-  
-//   if (scroll > 100) {
-//     app.classList.add("scrolled");
-    
-//   } else {
-//    // app.style.filter = `blur(${percentage}%)`
-//    app.classList.remove("scrolled");
-  
-//   }
-// })
-
 
 document.addEventListener('scroll', function () {
   const scroll = window.pageYOffset
   // const height = imagesHeight
   
-  if (scroll > 800) {
+  if  (scroll > 10) {
+    appuri.classList.add('scrolled')
+    // intro.classList.add('scrolled')
+  }
+  else if (scroll > 800) {
     app.classList.add("nofilter");
     images.classList.add("filter");
     
@@ -31,6 +23,7 @@ document.addEventListener('scroll', function () {
    // app.style.filter = `blur(${percentage}%)`
    app.classList.remove("nofilter");
    images.classList.remove("filter");
+   appuri.classList.remove('scrolled')
   }
 })
 
