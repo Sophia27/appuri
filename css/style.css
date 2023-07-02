@@ -315,12 +315,12 @@ footer {
     align-items: center;
     justify-content: center;
     z-index: 3;
-    transition: top 0.8s;
+    transition: top 1.2s;
 }
 
  .app.scrolled {
     top: 0vh;
-    transition: top 0.8s;
+    transition: top 1.2s;
 }
 
 .app img {
