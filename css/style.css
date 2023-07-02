@@ -445,6 +445,8 @@ div.video-titel-container {
     min-height: 53.75vh;
     height: 100vh;
     max-height: 74vh;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .mask {
@@ -459,6 +461,8 @@ div.video-titel-container {
     z-index: 3;
     pointer-events: none;
     border-radius: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .nobg {
