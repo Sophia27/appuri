@@ -1,20 +1,10 @@
-//const cursor = document.querySelector('div.cursor')
 const videoContainers = document.querySelectorAll('div.cursor-container')
-// const moveCursor = function(x, y) {
-//   cursor.style.left = x + 'px'
-//   cursor.style.top = y + 'px'
-// }
-
 
 
 videoContainers.forEach(container => {
   const video = container.querySelector('video')
   const btn = container.querySelector('div.btn')
   const mask = container.querySelector('.mask')
-
-  // container.addEventListener('mousemove', function(client) {
-  //   moveCursor(client.pageX, client.pageY)
-  // })
 
   video.addEventListener('click', function() {
     if (video.paused == false) {

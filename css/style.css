@@ -28,7 +28,7 @@
 
 :root {
     --blur: blur(12px);
-    --blurfine: blur(2.5px);
+    --blurfine: blur(2px);
     --blursmalltext: blur(1px);
     --width: calc(100vw - 80px);
     --col-width: 30px;
@@ -445,7 +445,6 @@ div.video-titel-container {
     min-height: 53.75vh;
     height: 100vh;
     max-height: 74vh;
-    background-color: rgba(0, 0, 0, 0.04);
 }
 
 .mask {
@@ -455,11 +454,11 @@ div.video-titel-container {
     left: 0;
     object-fit: contain;
     overflow: hidden;
-    width: 100%;
     height: auto;
     max-height: 74vh;
     z-index: 3;
     pointer-events: none;
+    border-radius: 30px;
 }
 
 .nobg {
@@ -472,7 +471,6 @@ div.video-titel-container {
     left: 0;
     object-fit: contain;
     overflow: hidden;
-    width: 100%;
     height: auto;
     max-height: 74vh;
     border: 0;
@@ -481,6 +479,7 @@ div.video-titel-container {
     overflow-clip-margin: content-box;
     overflow: clip;
     mix-blend-mode: multiply;
+    margin: 0 auto;
 }
 
 .btn {
@@ -588,6 +587,26 @@ div.video-titel-container {
 .contributer-name:hover {
     filter: none;
     -webkit-filter: none;
+}
+
+footer .links a {
+    display: inline;
+    padding-right: 20px;
+}
+
+footer .links div {
+    display: inline;
+    cursor: pointer
+}
+
+
+footer .links div:hover {
+    filter:none;
+}
+
+.sender-subs-popup-form .sender-subs-popup-form-bYwDWe
+.sender-form-modal-background .sender-form-input-bYwDWe {
+    background-color: red !important;
 }
 
 /*--------------------------------------------------------------
