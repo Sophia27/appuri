@@ -455,11 +455,11 @@ div.video-titel-container {
     left: 0;
     object-fit: contain;
     overflow: hidden;
-    height: auto;
+    height: 100%;
     max-height: 74vh;
     z-index: 3;
     pointer-events: none;
-    border-radius: 30px;
+    border-radius: 37px;
    
 }
 
