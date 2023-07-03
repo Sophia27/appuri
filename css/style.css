@@ -920,3 +920,12 @@ footer .links div:hover {
 }
 
 }
+
+
+@media only screen and (min-width: 1200px) {
+
+    .glance-content {
+        min-height: 74vh;
+    }
+
+}
